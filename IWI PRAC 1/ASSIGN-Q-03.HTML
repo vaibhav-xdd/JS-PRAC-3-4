@@ -1,0 +1,38 @@
+<!--3. Build an HTML form that asks the user for their Name, Email, Gender (radio buttons), 
+Favorite Subject (dropdown), and Comments (textarea). Add a Submit button.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information Form</title>
+</head>
+<body>
+  <h2>User Information Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male"> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female<br><br>
+
+    <label for="subject">Favorite Subject:</label>
+    <select id="subject" name="subject">
+      <option value="math">Mathematics</option>
+      <option value="science">Science</option>
+      <option value="english">English</option>
+      <option value="computer">Computer Science</option>
+    </select><br><br>
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments here..."></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
